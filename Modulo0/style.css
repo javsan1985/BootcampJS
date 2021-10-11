@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 64px;
+}
+  
+.hotels-header > h2{
+    text-align: center;
+    padding: 16px;
+}
+
+.hotels-item{
+    padding: 32px;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color:#222;
+}
+
+.item-name{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.item-description{
+    font-size: 14px;
+    display: block;
+    width: 400px;
+}
+
+.item-telephone{
+    font-size: 18px;
+    display: block;
+    font-weight:500;
+}
+
+.item-ratio {
+    font-size: 18px;
+    display: block;
+    text-align: justify;
+    height: 100px;
+}

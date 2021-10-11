@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    color: #222;
+}
+
+#button-sum {
+    width: 25px;
+}
+
+#button-subtraction {
+    width: 25px;
+}
+
+#button-multiplication {
+    width: 25px;
+}
+
+#button-division {
+    width: 25px;
+}

@@ -1,0 +1,40 @@
+body {
+    color: #222;
+    text-align: center;
+}
+
+#button-sum {
+    width: 25px;
+    background-color: rgb(198, 201, 201);
+    border-radius: 2px;
+    border: solid 1px;
+}
+
+#button-subtraction {
+    width: 25px;
+    background-color: rgb(198, 201, 201);
+    border-radius: 2px;
+    border: solid 1px;
+}
+
+#button-multiplication {
+    width: 25px;
+    background-color: rgb(198, 201, 201);
+    border-radius: 2px;
+    border: solid 1px;
+}
+
+#button-division {
+    width: 25px;
+    background-color: rgb(198, 201, 201);
+    border-radius: 2px;
+    border: solid 1px;
+}
+
+#button-result {
+    width: 25px;
+    background-color: rgb(226, 85, 104);
+    border-radius: 2px;
+    border: solid 1px #222;
+    color: azure;
+}

@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.img {
+    margin: 24px 0 12px 0;
+    text-align: center;
+    position: relative;
+}
+
+img.avatar {
+    width: 100px;
+}
+
+.data{
+    padding: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 32px 0;
+    display: inline-block;
+    border: 1px solid #222;
+    box-sizing: border-box;
+}
+
+button{
+    color: #fff;
+    background-color: #222;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+}
+   

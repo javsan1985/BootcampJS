@@ -1,21 +1,35 @@
 
+var rateRoom;
+var occupationRoom;
+var rateSpa;
 
-// var fCalcularTarifa = () => {
+// Inputs
+function RoomSelected() {
+rateRoom = document.getElementById("room").value;
+} 
 
-//     var _tarifaHabitacion = Number(document.getElementById("selHabitacion").value);
-//     var _tarifaSPA = document.getElementById("chkSPA").checked ? 20 : 0;
-//     var _tarifaOcupacion = Number(document.getElementById("selOcupacion").value);
+function OccupationSelected() {
+occupationRoom = document.getElementById("occupation-room").value;
+} 
 
-//     var _numNoches = Number(document.getElementById("numNoches").value);
-//     var _numNochesParking = Number(document.getElementById("numNochesParking").value);
+function spa(checkbox){
+    if(checkbox.checked){
+        rateSpa = 20;
+    }else {
+        rateSpa = 0;
+    }
+}
 
-//     var _tarifaCalculada = (_tarifaHabitacion + _tarifaSPA) * _tarifaOcupacion;
-//     _tarifaCalculada = _tarifaCalculada * _numNoches;
-    
-//     // Coste parking
-//     _tarifaCalculada = _tarifaCalculada + (_numNochesParking > 0 ? _numNochesParking * 10 : 0);
+var getNights = () => parseInt(document.getElementById("number-nights").value);
+var getParkingDays = () => parseInt(document.getElementById("parking").value);
 
-//     alert("Coste de Habitacion: " + _tarifaCalculada);
-// }
+// Operations
+var parking = () => getParkingDays() * 10;
+var priceRoom = () => (rateRoom * occupationRoom) * getNights();
+var totalPrice = () => parking() + priceRoom() + rateSpa;
 
-// document.getElementById("btnCalcular").addEventListener("click", fCalcularTarifa);
+// Results
+var total = () => document.getElementById("result").innerText = "Precio total: " + totalPrice() + " €";
+
+// Events
+document.getElementById("button-result").addEventListener("click", total);

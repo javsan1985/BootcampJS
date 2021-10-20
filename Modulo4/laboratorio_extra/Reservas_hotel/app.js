@@ -1,4 +1,3 @@
-
 var rateRoom;
 var occupationRoom;
 var rateSpa;

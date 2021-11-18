@@ -1,14 +1,11 @@
-// Inputs
+// Capturar valor input
 var operator = () => parseInt(document.getElementById("input-number").value);
 
-// Results
-var result = () => document.getElementById("result").innerText = operator();
+//Guardamos valor de input en partial y lo reseteamos
 
 function sum() {
-    var partial = document.getElementById("result").innerText = operator() + " + ";
+    document.getElementById("result").innerText = operator() + " + ";
     document.getElementById("input-number").value = "";
-    console.log("Operator: ",operator());
-    console.log("Partial: ",partial);
 }
 
 function sub() {
@@ -25,6 +22,10 @@ function div() {
     document.getElementById("result").innerText = operator() + " / ";
     document.getElementById("input-number").value = "";
 }
+
+
+// Results
+var result = () => document.getElementById("result").innerText = operator();
 
 // Events
 document.getElementById("button-result").addEventListener("click", result);

@@ -1,21 +1,36 @@
 // Inputs
-var getNumber1 = () => parseInt(document.getElementById("input-number1").value);
-var getResult = () => parseInt(document.getElementById("input-number1").value);
-
-// Operations
-var sum = () => getResult() + getNumber1();
-var sub = () => getResult() - getNumber1();
-var mul = () => getResult() * getNumber1();
-var div = () => getResult() / getNumber1();
+var operator = () => parseInt(document.getElementById("input-number").value);
 
 // Results
-var resultSum = () => document.getElementById("result").innerText = sum();
-var resultSub = () => document.getElementById("result").innerText = sub();
-var resultMul = () => document.getElementById("result").innerText = mul();
-var resultDiv = () => document.getElementById("result").innerText = div();
+var result = () => document.getElementById("result").innerText = operator();
+
+function sum() {
+    var partial = document.getElementById("result").innerText = operator() + " + ";
+    document.getElementById("input-number").value = "";
+    console.log("Operator: ",operator());
+    console.log("Partial: ",partial);
+}
+
+function sub() {
+    document.getElementById("result").innerText = operator() + " - ";
+    document.getElementById("input-number").value = "";
+}
+
+function mul() {
+    document.getElementById("result").innerText = operator() + " x ";
+    document.getElementById("input-number").value = "";
+}
+
+function div() {
+    document.getElementById("result").innerText = operator() + " / ";
+    document.getElementById("input-number").value = "";
+}
 
 // Events
-document.getElementById("button-sum").addEventListener("click", resultSum);
-document.getElementById("button-subtraction").addEventListener("click", resultSub);
-document.getElementById("button-multiplication").addEventListener("click", resultMul);
-document.getElementById("button-division").addEventListener("click", resultDiv);
+document.getElementById("button-result").addEventListener("click", result);
+document.getElementById("button-sum").addEventListener("click", sum);
+document.getElementById("button-subtraction").addEventListener("click", sub);
+document.getElementById("button-multiplication").addEventListener("click", mul);
+document.getElementById("button-division").addEventListener("click", div);
+
+

@@ -1,6 +1,7 @@
 // Capturar valor input
 var operator = () => (document.getElementById("input-number").value);
 
+//Operations
 function sum() {
     document.getElementById("result").innerText = partial() + "+";
     document.getElementById("input-number").value = "";
